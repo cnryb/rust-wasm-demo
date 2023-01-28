@@ -1,0 +1,14 @@
+{
+    "name": "test",
+    "description": "My Project Description",
+    "type": "module",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "wasm-pack build --target nodejs --out-dir pkg",
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "rust-wasm-module": "file:./pkg"
+    }
+}
