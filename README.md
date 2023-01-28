@@ -15,7 +15,7 @@ cargo install wasm-pack
 npm run build
 ```
 
-## install dependencies in nodejs
+## install dependencies for nodejs
 
 ```bash
 npm install

@@ -1,7 +1,8 @@
 // import * as wasm_module from './pkg/wasm_module.js'
 // const wasm_module = require('./pkg')
-import * as wasm_module from 'rust-wasm-module'
+// import * as wasm_module from 'rust-wasm-module'
+import { greet, add } from 'rust-wasm-module'
 
-wasm_module.greet("WASM")
+greet("WASM")
 
-console.log(wasm_module.add(1, 2))
+console.log('call wasm, 1 + 2 =', add(1, 2))
