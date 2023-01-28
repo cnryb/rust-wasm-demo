@@ -23,8 +23,11 @@ jobs:
     - name: install required tools
       run: cargo install wasm-pack
           
-    - name: build
+    - name: build wasm
       run: npm run build
+      
+    - name: install dependencies for nodejs
+      run: npm i
       
     - name: Run tests
       run: npm run start
